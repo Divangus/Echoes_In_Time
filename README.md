@@ -1,5 +1,4 @@
 # 6_CITM_GameJam
-A Game Jam organized by CITM of Terrassa, in collaboration with Gameloft
 
 ## About the project
 This project is a game made with unity for the 6th CITM GameJam, organized by CITM university of Terrassa in collaboration with Gameloft
