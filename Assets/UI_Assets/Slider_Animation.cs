@@ -9,7 +9,7 @@ public class Slider_Animation : MonoBehaviour
     public Sprite[] newFrame;
 
     public float time_left;
-    public Text  timer_Text;
+    //public Text  timer_Text;
     public bool playSlider;
 
     float lastFrame;
@@ -48,15 +48,15 @@ public class Slider_Animation : MonoBehaviour
 
     public void updateTimer()
     {
-            float currentTime = time_left;
+        float currentTime = time_left;
 
-            currentTime += 1;
+        currentTime += 1;
 
-            //set slider value
-            mainSlider.value = Mathf.FloorToInt((currentTime * 4) % 60) - 3;
+        //set slider value
+        mainSlider.value = ((currentTime * 4) % 60) - 4;
 
-            //set text
-            timer_Text.text = string.Format("{0} seconds", Mathf.FloorToInt(currentTime % 60));
+        //set text
+        //timer_Text.text = string.Format("{0} seconds", Mathf.FloorToInt(currentTime % 60));
     }
 
     public void setTimer()
@@ -79,7 +79,7 @@ public class Slider_Animation : MonoBehaviour
             }
 
             //set text
-            timer_Text.text = string.Format("{0} seconds", (int)(currentTime * 0.25f));
+            //timer_Text.text = string.Format("{0} seconds", (int)(currentTime * 0.25f));
 
             //set the time
             time_left = (currentTime * 0.25f);
@@ -91,8 +91,11 @@ public class Slider_Animation : MonoBehaviour
 
     public void SubmitSliderSetting()
     {
+        float currentTime = time_left;
+
+        currentTime += 1;
         //change sprite infunctuion of the slider position
-        switch (mainSlider.value)
+        switch (Mathf.FloorToInt((currentTime * 4) % 60) - 4)
         {
             case 1:
                 mainSlider.image.sprite = newFrame[((int)mainSlider.value)];
