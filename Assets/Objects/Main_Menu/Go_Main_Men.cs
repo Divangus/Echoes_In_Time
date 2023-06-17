@@ -7,6 +7,7 @@ public class Go_Main_Men : MonoBehaviour
 {
    public void GoTo(string mainMenu)
     {
+        //change scene to the main menu
         SceneManager.LoadScene(mainMenu);
     }
 }

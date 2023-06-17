@@ -18,6 +18,7 @@ public class LevelBlackBoard : MonoBehaviour
 
     public List<GameObject> objectsToDestroy = new List<GameObject>();
 
+    Level_Manager lvl_Manager;
 
     private void Update()
     {
@@ -30,6 +31,8 @@ public class LevelBlackBoard : MonoBehaviour
             {
                Destroy(obj);
             }
+
+            lvl_Manager.lvlCompleted[level] = true;
             SceneManager.LoadScene("Lvl_" + (level+1));
         }
     }
