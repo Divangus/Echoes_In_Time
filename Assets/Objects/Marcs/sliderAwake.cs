@@ -14,8 +14,11 @@ public class sliderAwake : MonoBehaviour
             Destroy(this.gameObject);
         }
 
+        //Add the slider to objects that have to been destroyed when the lvl is completed
         FindObjectOfType<LevelBlackBoard>().objectsToDestroy.Add(this.gameObject);
-        DontDestroyOnLoad(this.gameObject); //Don't reset Slider when reloading the scene
+
+        //Don't reset Slider when reloading the scene
+        DontDestroyOnLoad(this.gameObject); 
     }
     void Start()
     {

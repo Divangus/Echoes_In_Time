@@ -20,6 +20,7 @@ public class Goal : MonoBehaviour
     {
         if(collision.CompareTag("soundWave"))
         {
+            //If a soundWave reach the goal, count it on the BB
             collision.gameObject.SetActive(false);
             FindObjectOfType<LevelBlackBoard>().goalsReached++;
         }

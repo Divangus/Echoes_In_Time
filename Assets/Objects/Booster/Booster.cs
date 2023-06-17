@@ -17,12 +17,13 @@ public class Booster : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-
         if(other.CompareTag("soundWave"))
         {
-
+            //Get the booster direction
             Vector2 dir = transform.up;
             float force = 10f;
+
+            //Boost the Soundwave
             other.gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(dir.x * force, dir.y * force);
         }
 

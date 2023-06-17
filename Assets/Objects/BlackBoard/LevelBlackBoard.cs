@@ -23,9 +23,9 @@ public class LevelBlackBoard : MonoBehaviour
     {
         if(goalsReached == numberOfMaps)
         {
-            // Obtén todos los objetos de DontDestroyOnLoad en la escena actual
-
-            // Destruye los objetos duplicados encontrados
+            // Get all the DontDestroyOnLoad objects of the actual scene
+            
+            // Destroy al cloned GO
             foreach (var obj in objectsToDestroy)
             {
                Destroy(obj);
