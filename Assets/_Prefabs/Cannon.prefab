@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 7292814410456936302}
   - component: {fileID: 7292814410456936303}
   - component: {fileID: 7292814410456936301}
-  - component: {fileID: 7292814410456936300}
   m_Layer: 0
   m_Name: Cannon
   m_TagString: Untagged
@@ -33,7 +32,7 @@ Transform:
   m_Children:
   - {fileID: 7292814410733858403}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &7292814410456936303
 SpriteRenderer:
@@ -101,22 +100,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ball: {fileID: 3099422251427321635, guid: 86476c42a79c71b4196f06454fdd25e1, type: 3}
   _ballSpeed: 800
---- !u!58 &7292814410456936300
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7292814410456936296}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
 --- !u!1 &7292814410733858412
 GameObject:
   m_ObjectHideFlags: 0
