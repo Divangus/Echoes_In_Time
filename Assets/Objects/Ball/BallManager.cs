@@ -7,16 +7,17 @@ using static UnityEngine.GraphicsBuffer;
 
 public class BallManager : MonoBehaviour
 {
-
-    public bool onHovered;
+    public Rigidbody2D ball;
+    public float _ballSpeed;
     Vector2 GetBallPos;
     Vector2 GetMousePos;
     float _angle;
+    bool _ShootedBall;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        _ShootedBall = false;
     }
 
     // Update is called once per frame
@@ -38,9 +39,12 @@ public class BallManager : MonoBehaviour
             CalculatePos();
         }
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && _ShootedBall == false)
         {
-            gameObject.GetComponent<Rigidbody2D>().velocity = transform.up * 3;
+            Rigidbody2D clone_ball = Instantiate(ball, transform.position, transform.rotation) as Rigidbody2D;
+
+            clone_ball.velocity = transform.up * _ballSpeed * Time.deltaTime;
+            _ShootedBall = true;
         }
     }
 
@@ -52,8 +56,9 @@ public class BallManager : MonoBehaviour
 
 
         int resolvedAngle = ((int)_angle) / (int)22.5;
-        Debug.Log(resolvedAngle * 22.5f + 11.25f);
 
-        transform.rotation = Quaternion.AngleAxis(resolvedAngle * 22.5f + 11.25f, Vector3.back);
+        
+
+        transform.rotation = Quaternion.AngleAxis(resolvedAngle * 22.5f, Vector3.back);
     }
 }
