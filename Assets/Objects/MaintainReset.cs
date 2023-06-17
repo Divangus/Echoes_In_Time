@@ -24,6 +24,6 @@ public class MaintainReset : MonoBehaviour
         FindObjectOfType<LevelBlackBoard>().objectsToDestroy.Add(this.gameObject);
 
         //Don't reset Slider when reloading the scene
-        DontDestroyOnLoad(this.gameObject); 
+        DontDestroyOnLoad(this.gameObject);
     }
 }
