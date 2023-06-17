@@ -2,14 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class sliderAwake : MonoBehaviour
+public class MaintainReset : MonoBehaviour
 {
+    [Header("THIS OBJECT MUST USE A TAG")]
+    public int copies;
+    public bool useNumberOfMaps;
+
     // Start is called before the first frame update
     void Awake()
     {
-        GameObject[] objs = GameObject.FindGameObjectsWithTag("Slider");
+        if (CompareTag("Untagged")) Debug.Log("OBJECT NEEDS A TAG");
 
-        if (objs.Length > FindObjectOfType<LevelBlackBoard>().numberOfMaps)
+        GameObject[] objs = GameObject.FindGameObjectsWithTag(tag);
+
+        if (objs.Length > ((useNumberOfMaps)? FindObjectOfType<LevelBlackBoard>().numberOfMaps: copies))
         {
             Destroy(this.gameObject);
         }
@@ -19,15 +25,5 @@ public class sliderAwake : MonoBehaviour
 
         //Don't reset Slider when reloading the scene
         DontDestroyOnLoad(this.gameObject); 
-    }
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

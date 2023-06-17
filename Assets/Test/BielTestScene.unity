@@ -822,6 +822,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: B1_Prefab
       objectReference: {fileID: 0}
+    - target: {fileID: 3615855950530524018, guid: d1f99a3861bb4a740ba33e8fddaae1e9, type: 3}
+      propertyPath: m_TagString
+      value: BackGround
+      objectReference: {fileID: 0}
     - target: {fileID: 3615855950530524019, guid: d1f99a3861bb4a740ba33e8fddaae1e9, type: 3}
       propertyPath: m_RootOrder
       value: 6
