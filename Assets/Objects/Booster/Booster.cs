@@ -23,6 +23,9 @@ public class Booster : MonoBehaviour
             Vector2 dir = transform.up;
             float force = 10f;
 
+            other.GetComponent<SoundWaveBehab>().SetHot(true);
+            other.isTrigger = true;
+
             //Boost the Soundwave
             other.gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(dir.x * force, dir.y * force);
         }

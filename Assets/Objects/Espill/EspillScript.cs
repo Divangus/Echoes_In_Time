@@ -66,12 +66,28 @@ public class EspillScript : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Disapear();
+        if (!collision.gameObject.CompareTag("soundWave")) return;
 
         //kill all objects
         foreach(EspillScript obj in brothers)
         {
             obj.Disapear();
         }
+        Disapear();
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (!collision.gameObject.CompareTag("soundWave")) return;
+
+        collision.gameObject.GetComponent<SoundWaveBehab>().SetHot(false);
+
+        foreach (EspillScript obj in brothers)
+        {
+            Destroy(obj.gameObject);
+        }
+        Destroy(gameObject);
+        
+        collision.isTrigger = false;
     }
 }
