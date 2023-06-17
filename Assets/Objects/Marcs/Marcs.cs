@@ -23,12 +23,17 @@ public class Marcs : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision)
     {
         //If a soundwaves leave the screen -> reset the scene
+        if (!collision.gameObject.activeInHierarchy) return;
 
-        for(int i = 0; i < soundWaves.Length; i++)
+        if (collision.CompareTag("soundWave"))
         {
-            soundWaves[i].SetActive(false);
-        }
+            for (int i = 0; i < soundWaves.Length; i++)
+            {
+                soundWaves[i].SetActive(false);
+            }
 
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+            
     }
 }
