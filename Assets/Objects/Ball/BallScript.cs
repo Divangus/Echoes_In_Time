@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 using UnityEngine;
+using UnityEngine.UI;
 using static UnityEngine.GraphicsBuffer;
 
 public class BallScript : MonoBehaviour
@@ -15,6 +16,7 @@ public class BallScript : MonoBehaviour
     bool _ShootedBall;
     public bool _SelectedBall;
     public GameObject _BallManager;
+    public Slider _timer;
 
     // Start is called before the first frame update
     void Start()
@@ -43,12 +45,19 @@ public class BallScript : MonoBehaviour
             GetMousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         }
 
-        if (Input.GetKeyDown(KeyCode.Space) && _ShootedBall == false)
+        if (Input.GetKeyDown(KeyCode.Space) && !_ShootedBall)
+        {
+            _timer.GetComponent<Slider_Animation>().playSlider = true;
+            
+        }
+
+        if (_timer.GetComponent<Slider_Animation>().playSlider == false && _timer.GetComponent<Slider_Animation>()._TimerOut == true && !_ShootedBall)
         {
             Rigidbody2D clone_ball = Instantiate(ball, transform.position, transform.rotation) as Rigidbody2D;
 
-            clone_ball.velocity = transform.up * _ballSpeed * Time.deltaTime;
             _ShootedBall = true;
+
+            clone_ball.velocity = transform.up * _ballSpeed * Time.deltaTime;  
         }
     }
 
