@@ -4,15 +4,28 @@ using UnityEngine;
 
 public class WallScript : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public bool copia = false;
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-        
+        if (copia) return;
+
+        LevelBlackBoard bb = FindObjectOfType<LevelBlackBoard>();
+
+        if (bb.numberOfMaps == 2)
+        {
+            //Create copies
+            Instantiate(gameObject, transform.position + new Vector3(bb.distance, 0.0f, 0.0f), transform.rotation, transform.parent).
+                GetComponent<WallScript>().copia = true;
+        }
+
+        if (bb.numberOfMaps == 3)
+        {
+            //Create copies
+            Instantiate(gameObject, transform.position + new Vector3(bb.distance, 0.0f, 0.0f), transform.rotation, transform.parent).
+                GetComponent<WallScript>().copia = true;
+            Instantiate(gameObject, transform.position + new Vector3(-bb.distance, 0.0f, 0.0f), transform.rotation, transform.parent).
+                GetComponent<WallScript>().copia = true;
+        }
     }
 }
