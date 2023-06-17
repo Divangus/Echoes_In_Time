@@ -28,7 +28,7 @@ public class BallScript : MonoBehaviour
     {
         RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
 
-        if (hit.collider == gameObject.GetComponent<Collider2D>())
+        if (hit.collider == gameObject.GetComponentInParent<Collider2D>())
         {
             if (Input.GetMouseButtonDown(0))
             {
