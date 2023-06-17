@@ -5,26 +5,26 @@ using UnityEngine;
 public class Booster : MonoBehaviour
 {
     // Start is called before the first frame update
-    Vector2 boosterDir;
+    //public Transform soundWaveTransform;
     void Start()
     {
-        boosterDir = transform.up;
     }
 
     // Update is called once per frame
     void Update()
     {        
-        transform.rotation = Quaternion.LookRotation(Vector3.forward, boosterDir);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Rigidbody2D rb = other.gameObject.GetComponent<Rigidbody2D>();
 
-        if (rb != null)
+        if(other.CompareTag("soundWave"))
         {
-            Vector2 direction = transform.up;
-            rb.AddForce(direction * 5f, ForceMode2D.Impulse);
+
+            Vector2 dir = transform.up;
+            float force = 10f;
+            other.gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(dir.x * force, dir.y * force);
         }
+
     }
 }

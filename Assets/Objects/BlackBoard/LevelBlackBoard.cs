@@ -21,11 +21,8 @@ public class LevelBlackBoard : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(goalsReached);
-
         if(goalsReached == numberOfMaps)
         {
-            //TODO: Destroy all DontDestroyOnLoad
             // Obtén todos los objetos de DontDestroyOnLoad en la escena actual
 
             // Destruye los objetos duplicados encontrados
