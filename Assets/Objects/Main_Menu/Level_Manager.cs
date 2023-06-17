@@ -20,7 +20,7 @@ public class Level_Manager : MonoBehaviour
         {
             //look all buttons, and change the color of the levels completed
             
-            if (FindObjectOfType<LevelBlackBoard>().lvlCompleted[i])
+            if (FindObjectOfType<LvlCompleted>().lvlCompleted[i])
             {
                 button_List[i].image.color = new Color(1f, 1f, 1f, 1f);
             }
