@@ -18,21 +18,24 @@ public class LevelBlackBoard : MonoBehaviour
 
     public List<GameObject> objectsToDestroy = new List<GameObject>();
 
-    Level_Manager lvl_Manager;
+    public bool[] lvlCompleted;
 
     private void Update()
     {
         if(goalsReached == numberOfMaps)
         {
+
             // Get all the DontDestroyOnLoad objects of the actual scene
-            
+
             // Destroy al cloned GO
             foreach (var obj in objectsToDestroy)
             {
                Destroy(obj);
             }
 
-            lvl_Manager.lvlCompleted[level] = true;
+            if(lvlCompleted.Length > 0)
+                lvlCompleted[level] = true;
+    
             SceneManager.LoadScene("Lvl_" + (level+1));
         }
     }

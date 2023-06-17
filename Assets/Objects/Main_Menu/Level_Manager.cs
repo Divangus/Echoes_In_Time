@@ -8,8 +8,6 @@ public class Level_Manager : MonoBehaviour
 {
     public Button[] button_List;
 
-    public bool[] lvlCompleted;
-
     public void Select_Level(int lvl)
     {
         //change scene
@@ -21,7 +19,8 @@ public class Level_Manager : MonoBehaviour
         for (int i = 0; i < button_List.Length; i++)
         {
             //look all buttons, and change the color of the levels completed
-            if (lvlCompleted[i])
+            
+            if (FindObjectOfType<LevelBlackBoard>().lvlCompleted[i])
             {
                 button_List[i].image.color = new Color(1f, 1f, 1f, 1f);
             }
