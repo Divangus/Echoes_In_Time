@@ -578,10 +578,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Espill
       objectReference: {fileID: 0}
-    - target: {fileID: 3924504091779152217, guid: 5f4b339fbe53b02489a765f48ae8599d, type: 3}
-      propertyPath: destroyTime
-      value: 0.1
-      objectReference: {fileID: 0}
     - target: {fileID: 3924504091779152228, guid: 5f4b339fbe53b02489a765f48ae8599d, type: 3}
       propertyPath: m_RootOrder
       value: -1
