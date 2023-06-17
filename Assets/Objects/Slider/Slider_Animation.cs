@@ -11,6 +11,7 @@ public class Slider_Animation : MonoBehaviour
     public float time_left;
     //public Text  timer_Text;
     public bool playSlider;
+    public bool _TimerOut;
 
     float lastFrame;
 
@@ -42,6 +43,7 @@ public class Slider_Animation : MonoBehaviour
             //reset when finish
             playSlider = false;
             time_left = 3;
+            _TimerOut = true;
         }
 
     }
