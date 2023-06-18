@@ -9,7 +9,7 @@ public class LevelBlackBoard : MonoBehaviour
     [SerializeField]
     private int level;
 
-    private int totalLevels = 7;
+    public bool finalLevel;
 
     [Range(1, 3)]
     public int numberOfMaps = 1;
@@ -36,14 +36,15 @@ public class LevelBlackBoard : MonoBehaviour
 
             // Get all the DontDestroyOnLoad objects of the actual scene
 
-            DestroyEverything();
-
-            if(level == totalLevels)
+            
+            if(finalLevel)
             {
+                DestroyEverything();
                 SceneManager.LoadScene("Main_Menu");
             }
             else
             {
+                DestroyEverything();
                 SceneManager.LoadScene("Lvl_" + (level + 1));
             }
 
