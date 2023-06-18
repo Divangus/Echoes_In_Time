@@ -34,7 +34,6 @@ public class BallScript : MonoBehaviour
         {
             if (Input.GetMouseButtonDown(0))
             {
-                Debug.Log("alex putero");
                 GetBallPos = gameObject.transform.position;
                 _SelectedBall = true;
                 FindObjectOfType<BallManager>()._SelectedBall = this.gameObject;
@@ -48,6 +47,7 @@ public class BallScript : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space) && !_ShootedBall)
         {
+            Debug.Log("aaaa");
             _timer.GetComponent<Slider_Animation>().playSlider = true;
             
         }

@@ -27,7 +27,7 @@ RectTransform:
   m_GameObject: {fileID: 3587629559396010691}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3587629559595050992}
@@ -88,7 +88,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 12
   m_WholeNumbers: 0
-  m_Value: 12
+  m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -143,8 +143,9 @@ MonoBehaviour:
   - {fileID: 218832924, guid: f9287fe6da914814a944e124154832c3, type: 3}
   - {fileID: -605363264, guid: f9287fe6da914814a944e124154832c3, type: 3}
   - {fileID: 1712447437, guid: f9287fe6da914814a944e124154832c3, type: 3}
-  time_left: 3
+  time_left: 0
   playSlider: 0
+  _TimerOut: 0
 --- !u!1 &3587629559595050995
 GameObject:
   m_ObjectHideFlags: 0
