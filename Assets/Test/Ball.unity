@@ -1279,7 +1279,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3165378890251273305, guid: 3a384aef2cc2164459039d34faf3f5bb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 3165378890251273305, guid: 3a384aef2cc2164459039d34faf3f5bb, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1320,6 +1320,14 @@ PrefabInstance:
     - target: {fileID: 3165378890251273307, guid: 3a384aef2cc2164459039d34faf3f5bb, type: 3}
       propertyPath: m_Name
       value: Cannon
+      objectReference: {fileID: 0}
+    - target: {fileID: 3348337874006435702, guid: 3a384aef2cc2164459039d34faf3f5bb, type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3348337874006435702, guid: 3a384aef2cc2164459039d34faf3f5bb, type: 3}
+      propertyPath: m_FlipY
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5681545214194506889, guid: 3a384aef2cc2164459039d34faf3f5bb, type: 3}
       propertyPath: _timer
