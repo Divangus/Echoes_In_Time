@@ -47,7 +47,6 @@ public class BallScript : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space) && !_ShootedBall)
         {
-            Debug.Log("aaaa");
             _timer.GetComponent<Slider_Animation>().playSlider = true;
             
         }

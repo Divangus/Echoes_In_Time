@@ -9,6 +9,8 @@ public class LevelBlackBoard : MonoBehaviour
     [SerializeField]
     private int level;
 
+    private int totalLevels = 7;
+
     [Range(1, 3)]
     public int numberOfMaps = 1;
 
@@ -23,9 +25,9 @@ public class LevelBlackBoard : MonoBehaviour
         if(goalsReached == numberOfMaps)
         {
             //Mark lvl as completed
-            if(level > 0)
+            if (level > 0)
             {
-                FindObjectOfType<LvlCompleted>().lvlCompleted[level-1] = true;
+                FindObjectOfType<LvlCompleted>().lvlCompleted[level - 1] = true;
             }
             else
             {
@@ -34,13 +36,26 @@ public class LevelBlackBoard : MonoBehaviour
 
             // Get all the DontDestroyOnLoad objects of the actual scene
 
-            // Destroy al cloned GO
-            foreach (var obj in objectsToDestroy)
+            DestroyEverything();
+
+            if(level == totalLevels)
             {
-               Destroy(obj);
+                SceneManager.LoadScene("Main_Menu");
             }
-            
-            SceneManager.LoadScene("Lvl_" + (level+1));
+            else
+            {
+                SceneManager.LoadScene("Lvl_" + (level + 1));
+            }
+
+        }
+    }
+
+    public void DestroyEverything()
+    {
+        // Destroy al cloned GO
+        foreach (var obj in objectsToDestroy)
+        {
+            Destroy(obj);
         }
     }
 }

@@ -18,24 +18,17 @@ public class Goal : MonoBehaviour
         if (bb.numberOfMaps == 2)
         {
             //Create copies
-            GameObject goal = Instantiate(gameObject, transform.position + new Vector3(bb.distance, 0.0f, 0.0f), transform.rotation, transform.parent);
-            Goal g = goal.GetComponent<Goal>();
-            g.copia = true;
-
+            Instantiate(gameObject, transform.position + new Vector3(bb.distance, 0.0f, 0.0f), transform.rotation, transform.parent).
+                GetComponent<Goal>().copia = true;
         }
 
         if (bb.numberOfMaps == 3)
         {
             //Create copies
-            GameObject goal1 = Instantiate(gameObject, transform.position + new Vector3(bb.distance, 0.0f, 0.0f), transform.rotation, transform.parent);
-            GameObject goal2 = Instantiate(gameObject, transform.position + new Vector3(-bb.distance, 0.0f, 0.0f), transform.rotation, transform.parent);
-
-            //Get scripts
-            EspillScript g1 = goal1.GetComponent<EspillScript>();
-            EspillScript g2 = goal2.GetComponent<EspillScript>();
-            g1.copia = true;
-            g2.copia = true;
-
+            Instantiate(gameObject, transform.position + new Vector3(bb.distance, 0.0f, 0.0f), transform.rotation, transform.parent).
+                GetComponent<Goal>().copia = true;
+            Instantiate(gameObject, transform.position + new Vector3(-bb.distance, 0.0f, 0.0f), transform.rotation, transform.parent).
+                GetComponent<Goal>().copia = true;
         }
 
     }

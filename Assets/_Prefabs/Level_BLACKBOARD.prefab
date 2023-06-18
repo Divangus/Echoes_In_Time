@@ -44,4 +44,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69185159c9f0a644db7e76fd3e30969c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  level: 0
   numberOfMaps: 1
+  distance: 8.5
+  goalsReached: 0
+  objectsToDestroy: []
