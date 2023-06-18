@@ -20,4 +20,4 @@ This project was made by the team of **MONKEY KNOWLEDGE**, formed by:
   - [David Benages Calzada](https://github.com/Divangus) - Coder / Designer
   - [Roger Salas Bernadó](https://github.com/Draquian) - Coder / Designer
   - [Laia Pachón Pérez](https://github.com/laiapachon) - Artist / Designer
-  - [Àlex García Selma](https://github.com/MaralGS) - Coder / Designer
+  - [Àlex Garcia Selma](https://github.com/MaralGS) - Coder / Designer
