@@ -34,6 +34,7 @@ public class BallScript : MonoBehaviour
         {
             if (Input.GetMouseButtonDown(0))
             {
+                Debug.Log("alex putero");
                 GetBallPos = gameObject.transform.position;
                 _SelectedBall = true;
                 FindObjectOfType<BallManager>()._SelectedBall = this.gameObject;
