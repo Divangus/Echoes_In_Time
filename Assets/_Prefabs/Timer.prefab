@@ -130,19 +130,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainSlider: {fileID: 3587629559396010689}
   newFrame:
-  - {fileID: 442620956, guid: f9287fe6da914814a944e124154832c3, type: 3}
-  - {fileID: -1392621608, guid: f9287fe6da914814a944e124154832c3, type: 3}
-  - {fileID: -608847675, guid: f9287fe6da914814a944e124154832c3, type: 3}
-  - {fileID: 1245628463, guid: f9287fe6da914814a944e124154832c3, type: 3}
-  - {fileID: -1498051738, guid: f9287fe6da914814a944e124154832c3, type: 3}
-  - {fileID: 96168998, guid: f9287fe6da914814a944e124154832c3, type: 3}
-  - {fileID: 130775152, guid: f9287fe6da914814a944e124154832c3, type: 3}
-  - {fileID: -1058293893, guid: f9287fe6da914814a944e124154832c3, type: 3}
-  - {fileID: 1753025814, guid: f9287fe6da914814a944e124154832c3, type: 3}
-  - {fileID: 441369599, guid: f9287fe6da914814a944e124154832c3, type: 3}
-  - {fileID: 218832924, guid: f9287fe6da914814a944e124154832c3, type: 3}
-  - {fileID: -605363264, guid: f9287fe6da914814a944e124154832c3, type: 3}
-  - {fileID: 1712447437, guid: f9287fe6da914814a944e124154832c3, type: 3}
+  - {fileID: 21300000, guid: bb05d5e4944a6e443a8abf5bbda91c89, type: 3}
+  - {fileID: 21300000, guid: bb05d5e4944a6e443a8abf5bbda91c89, type: 3}
+  - {fileID: 21300000, guid: bb05d5e4944a6e443a8abf5bbda91c89, type: 3}
+  - {fileID: 21300000, guid: bb05d5e4944a6e443a8abf5bbda91c89, type: 3}
+  - {fileID: 21300000, guid: bb05d5e4944a6e443a8abf5bbda91c89, type: 3}
+  - {fileID: 21300000, guid: bb05d5e4944a6e443a8abf5bbda91c89, type: 3}
+  - {fileID: 21300000, guid: bb05d5e4944a6e443a8abf5bbda91c89, type: 3}
+  - {fileID: 21300000, guid: bb05d5e4944a6e443a8abf5bbda91c89, type: 3}
+  - {fileID: 21300000, guid: bb05d5e4944a6e443a8abf5bbda91c89, type: 3}
+  - {fileID: 21300000, guid: bb05d5e4944a6e443a8abf5bbda91c89, type: 3}
+  - {fileID: 21300000, guid: bb05d5e4944a6e443a8abf5bbda91c89, type: 3}
+  - {fileID: 21300000, guid: bb05d5e4944a6e443a8abf5bbda91c89, type: 3}
+  - {fileID: 21300000, guid: bb05d5e4944a6e443a8abf5bbda91c89, type: 3}
   time_left: 0
   playSlider: 0
   _TimerOut: 0
@@ -173,7 +173,7 @@ RectTransform:
   m_GameObject: {fileID: 3587629559595050995}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3587629559396010688}
@@ -181,8 +181,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -0.0000076293945, y: 0}
+  m_SizeDelta: {x: -0.000015258789, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3587629559595050894
 CanvasRenderer:
@@ -212,8 +212,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 74bc11e930830a149a6de3552e5f3b93, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -438,7 +438,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 442620956, guid: f9287fe6da914814a944e124154832c3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bb05d5e4944a6e443a8abf5bbda91c89, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
