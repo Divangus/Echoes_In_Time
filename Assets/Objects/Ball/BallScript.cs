@@ -39,12 +39,6 @@ public class BallScript : MonoBehaviour
             _SelectedBall = false;
         }
 
-        //Play Button
-        if (Input.GetKeyDown(KeyCode.Space) && !_ShootedBall)
-        {
-            _timer.GetComponent<Slider_Animation>().playSlider = true;
-        }
-
         //Shoot
         if (_timer.GetComponent<Slider_Animation>().playSlider == false && _timer.GetComponent<Slider_Animation>()._TimerOut == true && !_ShootedBall)
         {
@@ -64,5 +58,14 @@ public class BallScript : MonoBehaviour
 
         //Rotate arrow
         transform.rotation = Quaternion.AngleAxis(resolvedAngle * 22.5f, Vector3.back);
+    }
+
+    //Play Button
+    public void ShootBall()
+    {
+        if(!_ShootedBall)
+        {
+            _timer.GetComponent<Slider_Animation>().playSlider = true;
+        }
     }
 }
