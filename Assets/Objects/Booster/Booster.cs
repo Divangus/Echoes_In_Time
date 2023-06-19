@@ -19,14 +19,17 @@ public class Booster : MonoBehaviour
     {
         if(other.CompareTag("soundWave"))
         {
+            other.transform.position = new Vector3(transform.position.x, transform.position.y, 0);
+
             //Get the booster direction
             Vector2 dir = transform.up;
-            float force = 10f;
+            float force = 20f;
 
             other.GetComponent<SoundWaveBehab>().SetHot(true);
             other.isTrigger = true;
 
             //Boost the Soundwave
+            other.transform.up = transform.up;
             other.gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(dir.x * force, dir.y * force);
         }
 

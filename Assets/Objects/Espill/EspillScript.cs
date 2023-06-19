@@ -87,7 +87,9 @@ public class EspillScript : MonoBehaviour
             Destroy(obj.gameObject);
         }
         Destroy(gameObject);
+
         
+
         collision.isTrigger = false;
     }
 }

@@ -1377,6 +1377,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Booster
       objectReference: {fileID: 0}
+    - target: {fileID: 7350892153278286181, guid: 2de4c82ff861cab4783543e3b7d3a5f6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7350892153308486927, guid: 2de4c82ff861cab4783543e3b7d3a5f6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 2de4c82ff861cab4783543e3b7d3a5f6, type: 3}

@@ -45,6 +45,8 @@ public class BallScript : MonoBehaviour
             Instantiate(ball, transform.position, transform.rotation).velocity = transform.up * _ballSpeed;
             _ShootedBall = true;
         }
+
+        if (Input.GetKeyDown(KeyCode.Space)) ShootBall();
     }
 
     public void CalculatePos()
