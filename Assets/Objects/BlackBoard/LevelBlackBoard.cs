@@ -20,6 +20,21 @@ public class LevelBlackBoard : MonoBehaviour
 
     public List<GameObject> objectsToDestroy = new List<GameObject>();
 
+    private void Awake()
+    {
+        if (CompareTag("Untagged")) Debug.Log("OBJECT NEEDS A TAG");
+
+        GameObject[] objs = GameObject.FindGameObjectsWithTag(tag);
+
+        if (objs.Length > 1)
+        {
+            Destroy(this.gameObject);
+        }
+
+        //Don't reset Blackboard when reloading the scene
+        DontDestroyOnLoad(this.gameObject);
+    }
+
     private void Update()
     {
         if(goalsReached == numberOfMaps)
@@ -58,5 +73,12 @@ public class LevelBlackBoard : MonoBehaviour
         {
             Destroy(obj);
         }
+
+        Destroy(gameObject);
+    }
+
+    public void ResetValues()
+    {
+        goalsReached = 0;
     }
 }

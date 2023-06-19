@@ -45,6 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   level: 0
+  finalLevel: 0
   numberOfMaps: 1
   distance: 8.5
   goalsReached: 0

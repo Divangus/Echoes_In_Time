@@ -32,6 +32,8 @@ public class Marcs : MonoBehaviour
                 soundWaves[i].SetActive(false);
             }
 
+            //Reset BB & Scene
+            FindObjectOfType<LevelBlackBoard>().ResetValues();
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
             

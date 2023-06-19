@@ -761,6 +761,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Level_BLACKBOARD
       objectReference: {fileID: 0}
+    - target: {fileID: 578235352626719750, guid: 7603bb188b9877d41b80917f1701b700, type: 3}
+      propertyPath: m_TagString
+      value: BlackBoard
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 7603bb188b9877d41b80917f1701b700, type: 3}

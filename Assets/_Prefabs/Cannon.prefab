@@ -158,7 +158,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ball: {fileID: 3099422251427321635, guid: 86476c42a79c71b4196f06454fdd25e1, type: 3}
-  _ballSpeed: 1800
+  _ballSpeed: 10
   _SelectedBall: 0
   _BallManager: {fileID: 0}
   _timer: {fileID: 0}

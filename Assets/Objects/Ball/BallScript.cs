@@ -57,7 +57,7 @@ public class BallScript : MonoBehaviour
 
             _ShootedBall = true;
 
-            clone_ball.velocity = transform.up * _ballSpeed * Time.deltaTime;  
+            clone_ball.velocity = transform.up * _ballSpeed;  
         }
     }
 
