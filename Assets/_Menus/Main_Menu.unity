@@ -7197,6 +7197,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4038530845595339727}
   - component: {fileID: 7421702075600461892}
+  - component: {fileID: 7421702075600461893}
   m_Layer: 5
   m_Name: Audio_Master
   m_TagString: Untagged
@@ -7346,7 +7347,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 7421702075600461893}
         m_TargetAssemblyTypeName: Audio_Settings, Assembly-CSharp
         m_MethodName: SetVolume
         m_Mode: 0
@@ -7358,6 +7359,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &7421702075600461893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4686351869334228654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fef7ffe504c36b540b8f6c0560440ec9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioMixer: {fileID: 24100000, guid: 89b5c26f47b8b6540b561cd8419af6d1, type: 2}
 --- !u!222 &7429130365624772313
 CanvasRenderer:
   m_ObjectHideFlags: 0
