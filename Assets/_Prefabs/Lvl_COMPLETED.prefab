@@ -45,4 +45,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lvlCompleted: 000000000000000000000000
-  fadeTime: 1
+  fadeTime: 0.1

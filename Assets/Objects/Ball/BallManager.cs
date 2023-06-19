@@ -11,7 +11,6 @@ public class BallManager : MonoBehaviour
         foreach(GameObject ball in GameObject.FindGameObjectsWithTag("Cannon"))
         {
             _balls.Add(ball.transform.GetComponentInChildren<BallScript>());
-            Debug.Log("cannon");
         }
     }
 

@@ -46,7 +46,7 @@ public class LvlCompleted : MonoBehaviour
 
         if (fadeIn)
         {
-            alpha -= fadeTime * Time.deltaTime;
+            alpha -= Time.deltaTime / fadeTime;
             canv.alpha = alpha;
 
             if(alpha <= 0.0f)
@@ -57,14 +57,14 @@ public class LvlCompleted : MonoBehaviour
 
         if (fadeOut)
         {
-            alpha += fadeTime * Time.deltaTime;
+            alpha += Time.deltaTime / fadeTime;
             canv.alpha = alpha;
 
             if (alpha >= 1.0f)
             {
                 fadeOut = false;
                 fadeIn = true;
-                SceneManager.LoadScene(sceneToChange);
+                RealChangeScene();
                 getCanvas = true;
             }
         }
@@ -81,7 +81,15 @@ public class LvlCompleted : MonoBehaviour
     void GetCanvas()
     {
         canv = GameObject.Find("transition").GetComponent<CanvasGroup>();
-        if (canv == null) Debug.Log("cant find transition object");
+        if (canv == null) Debug.Log("Can't find 'transition' object");
+    }
+
+    void RealChangeScene()
+    {
+        LevelBlackBoard bb = FindObjectOfType<LevelBlackBoard>();
+        if (bb != null) bb.ResetValues();
+
+        SceneManager.LoadScene(sceneToChange);
     }
 }
 
