@@ -1168,6 +1168,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Espill
       objectReference: {fileID: 0}
+    - target: {fileID: 3924504091779152216, guid: 5f4b339fbe53b02489a765f48ae8599d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3924504091779152228, guid: 5f4b339fbe53b02489a765f48ae8599d, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -1355,7 +1359,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7350892152494082546, guid: 2de4c82ff861cab4783543e3b7d3a5f6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.5
+      value: -2.98
       objectReference: {fileID: 0}
     - target: {fileID: 7350892152494082546, guid: 2de4c82ff861cab4783543e3b7d3a5f6, type: 3}
       propertyPath: m_LocalPosition.z
