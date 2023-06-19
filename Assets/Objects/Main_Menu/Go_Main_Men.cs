@@ -11,6 +11,6 @@ public class Go_Main_Men : MonoBehaviour
         FindObjectOfType<LevelBlackBoard>().DestroyEverything();
 
         //change scene to the main menu
-        SceneManager.LoadScene(mainMenu);
+        FindObjectOfType<LvlCompleted>().ChangeScene(mainMenu);
     }
 }

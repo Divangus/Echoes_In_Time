@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Level_Manager : MonoBehaviour
@@ -10,8 +9,7 @@ public class Level_Manager : MonoBehaviour
 
     public void Select_Level(int lvl)
     {
-        //change scene
-        SceneManager.LoadScene("Lvl_" + lvl);
+        FindObjectOfType<LvlCompleted>().ChangeScene("Lvl_" + lvl);
     }
 
     public void Update_LevelSelect()

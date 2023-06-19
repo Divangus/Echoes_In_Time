@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class Marcs : MonoBehaviour
 {
@@ -34,7 +33,7 @@ public class Marcs : MonoBehaviour
 
             //Reset BB & Scene
             FindObjectOfType<LevelBlackBoard>().ResetValues();
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            FindObjectOfType<LvlCompleted>().ChangeScene();
         }
             
     }

@@ -2,7 +2,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class LevelBlackBoard : MonoBehaviour
 {
@@ -35,32 +34,29 @@ public class LevelBlackBoard : MonoBehaviour
         DontDestroyOnLoad(this.gameObject);
     }
 
+
+    //Change Scene
     private void Update()
     {
         if(goalsReached == numberOfMaps)
         {
+            LvlCompleted lc = FindObjectOfType<LvlCompleted>();
+
             //Mark lvl as completed
             if (level > 0)
             {
-                FindObjectOfType<LvlCompleted>().lvlCompleted[level - 1] = true;
-            }
-            else
-            {
-                FindObjectOfType<LvlCompleted>().lvlCompleted[level] = true;
+                lc.lvlCompleted[level - 1] = true;
             }
 
-            // Get all the DontDestroyOnLoad objects of the actual scene
-
-            
             if(finalLevel)
             {
                 DestroyEverything();
-                SceneManager.LoadScene("Main_Menu");
+                lc.ChangeScene("Main_Menu");
             }
             else
             {
                 DestroyEverything();
-                SceneManager.LoadScene("Lvl_" + (level + 1));
+                lc.ChangeScene("Lvl_" + (level + 1));
             }
 
         }
