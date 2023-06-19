@@ -5,7 +5,13 @@ using UnityEngine;
 public class SoundWaveBehab : MonoBehaviour
 {
     private bool hot = false;
+    public ParticleSystem particlesBooster;
     public ParticleSystem particles;
+
+    private void Update()
+    {
+        transform.up = gameObject.GetComponent<Rigidbody2D>().velocity.normalized;
+    }
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -19,12 +25,14 @@ public class SoundWaveBehab : MonoBehaviour
         if (value)
         {
             //activate particles
-            particles.Play();
+            particlesBooster.Play();
+            particles.Stop();
         }
         else
         {
             //deactivate particles
-            particles.Stop(false, ParticleSystemStopBehavior.StopEmitting);
+            particlesBooster.Stop(false, ParticleSystemStopBehavior.StopEmitting);
+            particles.Play();
             ResetSpeed();
         }
     }

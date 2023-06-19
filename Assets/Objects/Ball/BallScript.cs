@@ -13,6 +13,7 @@ public class BallScript : MonoBehaviour
     bool _ShootedBall;
     public bool _SelectedBall;
     public Slider _timer;
+    public ParticleSystem canonParticles;
 
     // Start is called before the first frame update
     void Start()
@@ -42,9 +43,10 @@ public class BallScript : MonoBehaviour
         //Shoot
         if (_timer.GetComponent<Slider_Animation>().playSlider == false && _timer.GetComponent<Slider_Animation>()._TimerOut == true && !_ShootedBall)
         {
+            canonParticles.Play();
             Instantiate(ball, transform.position, transform.rotation).velocity = transform.up * _ballSpeed;
             _ShootedBall = true;
-        }
+        }        
 
         if (Input.GetKeyDown(KeyCode.Space)) ShootBall();
     }
