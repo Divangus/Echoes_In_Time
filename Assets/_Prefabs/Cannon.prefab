@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3348337874006435702}
   m_Layer: 0
   m_Name: Cannon
-  m_TagString: Untagged
+  m_TagString: Cannon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -160,7 +160,6 @@ MonoBehaviour:
   ball: {fileID: 3099422251427321635, guid: 86476c42a79c71b4196f06454fdd25e1, type: 3}
   _ballSpeed: 10
   _SelectedBall: 0
-  _BallManager: {fileID: 0}
   _timer: {fileID: 0}
 --- !u!1 &8110430102936870464
 GameObject:
