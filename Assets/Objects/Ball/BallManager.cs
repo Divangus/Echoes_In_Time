@@ -4,12 +4,15 @@ using UnityEngine;
 
 public class BallManager : MonoBehaviour
 {
-    public List<GameObject> _balls;
-    public GameObject _SelectedBall;
+    public List<BallScript> _balls;
     // Start is called before the first frame update
     void Start()
     {
-   
+        foreach(GameObject ball in GameObject.FindGameObjectsWithTag("Cannon"))
+        {
+            _balls.Add(ball.transform.GetComponentInChildren<BallScript>());
+            Debug.Log("cannon");
+        }
     }
 
     // Update is called once per frame
@@ -17,9 +20,9 @@ public class BallManager : MonoBehaviour
     {
         for(int i = 0; i < _balls.Count; i++)
         {
-            if(_balls[i] == _SelectedBall)
+            if(_balls[i]._SelectedBall)
             {
-                _balls[i].GetComponent<BallScript>().CalculatePos();
+                _balls[i].CalculatePos();
             }
         }
     }
