@@ -9,15 +9,16 @@ public class SoundWaveBehab : MonoBehaviour
     public ParticleSystem particles;
     public ParticleSystem particlesEspill;
     float t = 0.0f;
+    public float particleTime; 
 
     private void Update()
     {
         transform.up = gameObject.GetComponent<Rigidbody2D>().velocity.normalized;
         t += Time.deltaTime;
-        if (t >= 0.2f)
+        if (t >= particleTime)
         {
-            t -= 0.2f;
-            particlesEspill.Play();
+            t -= particleTime;
+            particles.Play();
         }
     }
 
@@ -35,13 +36,11 @@ public class SoundWaveBehab : MonoBehaviour
         {
             //activate particles
             particlesBooster.Play();
-            //particles.Stop();
         }
         else
         {
             //deactivate particles
             particlesBooster.Stop(false, ParticleSystemStopBehavior.StopEmitting);
-            //particles.Play();
             ResetSpeed();
         }
     }
