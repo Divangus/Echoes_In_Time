@@ -6,6 +6,14 @@ public class Goal : MonoBehaviour
 {
     public bool copia = false;
 
+    private bool shake = false;
+
+    [SerializeField]
+    private float amount = 0.0f; //how much it shakes
+
+    [SerializeField]
+    private float time = 0.0f; //shake time
+
     // Start is called before the first frame update
     void Start()
     {
@@ -36,16 +44,51 @@ public class Goal : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (shake)
+        {
+            Vector3 newPos = Random.insideUnitSphere * (Time.deltaTime * amount);
+            newPos.y = transform.position.y;
+            newPos.z = transform.position.z;
+
+            transform.position = newPos;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.CompareTag("soundWave"))
         {
+            //Play goal Particles
+            gameObject.GetComponentInChildren<ParticleSystem>().Play();
+
+            //Calculate shake to the goal
+
+            //Shake Goal
+            ShakeMe();
+
+            
+
             //If a soundWave reach the goal, count it on the BB
             collision.gameObject.SetActive(false);
             FindObjectOfType<LevelBlackBoard>().goalsReached++;
         }
+    }
+
+    public void ShakeMe()
+    {
+        StartCoroutine("ShakeNow");
+    }
+
+    IEnumerator ShakeNow()
+    {
+        Vector3 originalPos = transform.position;
+
+        if(!shake) shake = true;
+
+        yield return new WaitForSeconds(time);
+
+        shake = false;
+
+        transform.position = originalPos;
     }
 }
