@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3924504091779152217}
   m_Layer: 0
   m_Name: Espill
-  m_TagString: Untagged
+  m_TagString: Espill
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

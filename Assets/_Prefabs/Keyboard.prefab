@@ -163,6 +163,7 @@ MonoBehaviour:
   _SelectedBall: 0
   _timer: {fileID: 0}
   canonParticles: {fileID: 1847020318762062136}
+  _instrument: 1
 --- !u!1 &8510118248366008381
 GameObject:
   m_ObjectHideFlags: 0

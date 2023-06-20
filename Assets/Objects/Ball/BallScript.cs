@@ -14,6 +14,7 @@ public class BallScript : MonoBehaviour
     public bool _SelectedBall;
     public Slider _timer;
     public ParticleSystem canonParticles;
+    public int _instrument;
 
     // Start is called before the first frame update
     void Start()
@@ -45,6 +46,7 @@ public class BallScript : MonoBehaviour
         {
             canonParticles.Play();
             Instantiate(ball, transform.position, transform.rotation).velocity = transform.up * _ballSpeed;
+            ball.gameObject.GetComponent<Espill_Sound>()._instrument_name = _instrument;
             _ShootedBall = true;
         }        
 

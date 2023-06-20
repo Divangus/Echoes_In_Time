@@ -5040,6 +5040,7 @@ MonoBehaviour:
   _SelectedBall: 0
   _timer: {fileID: 0}
   canonParticles: {fileID: 5968373646561267687}
+  _instrument: saxophone
 --- !u!1 &8110430102936870464
 GameObject:
   m_ObjectHideFlags: 0
