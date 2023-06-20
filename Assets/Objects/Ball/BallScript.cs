@@ -50,7 +50,7 @@ public class BallScript : MonoBehaviour
             _ShootedBall = true;
         }        
 
-        if (Input.GetKeyDown(KeyCode.Space)) ShootBall();
+        if (Input.GetMouseButtonDown(1)) ShootBall();
     }
 
     public void CalculatePos()
