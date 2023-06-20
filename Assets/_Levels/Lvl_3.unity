@@ -300,7 +300,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1811220060399421198, guid: b287923969ef1f94ea32bccf47af4531, type: 3}
       propertyPath: m_Offset.y
-      value: 3.4
+      value: 8.25
       objectReference: {fileID: 0}
     - target: {fileID: 1811220060399421198, guid: b287923969ef1f94ea32bccf47af4531, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
