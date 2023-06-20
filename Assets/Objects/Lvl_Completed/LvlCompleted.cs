@@ -17,6 +17,8 @@ public class LvlCompleted : MonoBehaviour
 
     float alpha = 0.0f;
     public AudioClip _lvlComplete;
+    public AudioClip _lvlFail;
+
     AudioSource source;
 
     bool getCanvas = false;
@@ -109,6 +111,7 @@ public class LvlCompleted : MonoBehaviour
     public void PlayAudio(AudioClip ac)
     {
         source.PlayOneShot(ac);
+        Debug.Log("Sound!!!");
     }
 }
 

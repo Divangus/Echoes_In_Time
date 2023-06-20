@@ -26,6 +26,10 @@ public class Marcs : MonoBehaviour
 
         if (collision.CompareTag("soundWave"))
         {
+            //PLay Audio Reset
+            LvlCompleted lc = FindObjectOfType<LvlCompleted>();
+            lc.PlayAudio(lc._lvlFail);
+
             for (int i = 0; i < soundWaves.Length; i++)
             {
                 soundWaves[i].SetActive(false);
