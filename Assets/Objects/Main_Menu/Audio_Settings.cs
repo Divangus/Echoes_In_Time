@@ -15,5 +15,7 @@ public class Audio_Settings : MonoBehaviour
             dbVolume = -80.0f;
         }
         audioMixer.SetFloat("volume", dbVolume);
+
+        Debug.Log(dbVolume);
     }
 }
