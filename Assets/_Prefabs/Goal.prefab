@@ -126,7 +126,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   copia: 0
-  amount: 80
+  amount: 10
   time: 0.25
 --- !u!1 &7020316343721661308
 GameObject:
