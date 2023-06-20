@@ -60,10 +60,10 @@ public class BallScript : MonoBehaviour
 
         //Get angle
         float _angle = Mathf.Atan2(FinalDir.x, FinalDir.y) * 180 / Mathf.PI;
-        int resolvedAngle = ((int)_angle) / (int)22.5;
+        int resolvedAngle = (int)(_angle / 11.25f);
 
         //Rotate arrow
-        transform.rotation = Quaternion.AngleAxis(_angle, Vector3.back);
+        transform.rotation = Quaternion.AngleAxis(resolvedAngle * 11.25f, Vector3.back);
     }
 
     //Play Button
