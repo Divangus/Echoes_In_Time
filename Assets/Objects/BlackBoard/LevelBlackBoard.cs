@@ -51,12 +51,14 @@ public class LevelBlackBoard : MonoBehaviour
             if(finalLevel)
             {
                 DestroyEverything();
+                lc.gameObject.GetComponent<AudioSource>().PlayOneShot(lc._lvlComplete);
                 lc.ChangeScene("Main_Menu");
             }
             else
             {
                 DestroyEverything();
                 lc.ChangeScene("Lvl_" + (level + 1));
+                lc.gameObject.GetComponent<AudioSource>().PlayOneShot(lc._lvlComplete);
             }
 
         }

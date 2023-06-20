@@ -13,6 +13,7 @@ public class LvlCompleted : MonoBehaviour
     CanvasGroup canv;
     string sceneToChange;
     float alpha = 0.0f;
+    public AudioClip _lvlComplete;
 
     bool getCanvas = false;
 
