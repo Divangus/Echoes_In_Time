@@ -17,7 +17,7 @@ public class SoundWaveBehab : MonoBehaviour
         t += Time.deltaTime;
         if (t >= particleTime)
         {
-            t -= particleTime;
+            t = 0.0f;
             particles.Play();
         }
     }
