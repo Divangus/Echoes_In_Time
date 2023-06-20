@@ -63,7 +63,7 @@ public class BallScript : MonoBehaviour
         int resolvedAngle = ((int)_angle) / (int)22.5;
 
         //Rotate arrow
-        transform.rotation = Quaternion.AngleAxis(resolvedAngle * 22.5f, Vector3.back);
+        transform.rotation = Quaternion.AngleAxis(_angle, Vector3.back);
     }
 
     //Play Button
