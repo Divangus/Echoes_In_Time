@@ -8,7 +8,12 @@ public class Audio_Settings : MonoBehaviour
     public AudioMixer audioMixer;
     public void SetVolume(float vol)
     {
+        var dbVolume = Mathf.Log10(vol) * 20;
         //ajust the volume mixer
-        audioMixer.SetFloat("volume", vol);
+        if (vol == 0.0f)
+        {
+            dbVolume = -80.0f;
+        }
+        audioMixer.SetFloat("volume", dbVolume);
     }
 }
