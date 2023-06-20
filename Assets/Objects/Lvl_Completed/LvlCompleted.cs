@@ -11,7 +11,10 @@ public class LvlCompleted : MonoBehaviour
     bool fadeOut = false;
     public float fadeTime = 1.0f;
     CanvasGroup canv;
+
     string sceneToChange;
+    bool destroyEverything;
+
     float alpha = 0.0f;
     public AudioClip _lvlComplete;
 
@@ -35,6 +38,7 @@ public class LvlCompleted : MonoBehaviour
     private void Start()
     {
         GetCanvas();
+        //canv.alpha = 1.0f;
     }
 
     private void Update()
@@ -71,8 +75,9 @@ public class LvlCompleted : MonoBehaviour
         }
     }
 
-    public void ChangeScene(string sceneName = "")
+    public void ChangeScene(string sceneName = "", bool destroy = false)
     {
+        destroyEverything = destroy;
         fadeOut = true;
 
         if (sceneName == "") return;
@@ -88,7 +93,11 @@ public class LvlCompleted : MonoBehaviour
     void RealChangeScene()
     {
         LevelBlackBoard bb = FindObjectOfType<LevelBlackBoard>();
-        if (bb != null) bb.ResetValues();
+        if (bb != null)
+        {
+            bb.ResetValues();
+            if(destroyEverything) bb.DestroyEverything();
+        }
 
         SceneManager.LoadScene(sceneToChange);
     }

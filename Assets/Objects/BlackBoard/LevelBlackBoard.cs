@@ -41,6 +41,7 @@ public class LevelBlackBoard : MonoBehaviour
         if(goalsReached == numberOfMaps)
         {
             LvlCompleted lc = FindObjectOfType<LvlCompleted>();
+            lc.gameObject.GetComponent<AudioSource>().PlayOneShot(lc._lvlComplete);
 
             //Mark lvl as completed
             if (level > 0)
@@ -50,15 +51,11 @@ public class LevelBlackBoard : MonoBehaviour
 
             if(finalLevel)
             {
-                DestroyEverything();
-                lc.gameObject.GetComponent<AudioSource>().PlayOneShot(lc._lvlComplete);
-                lc.ChangeScene("Main_Menu");
+                lc.ChangeScene("Main_Menu", true);
             }
             else
             {
-                DestroyEverything();
-                lc.ChangeScene("Lvl_" + (level + 1));
-                lc.gameObject.GetComponent<AudioSource>().PlayOneShot(lc._lvlComplete);
+                lc.ChangeScene("Lvl_" + (level + 1), true);
             }
 
         }
@@ -78,5 +75,14 @@ public class LevelBlackBoard : MonoBehaviour
     public void ResetValues()
     {
         goalsReached = 0;
+        foreach(BallScript bs in FindObjectsOfType<BallScript>())
+        {
+            bs.ResetValues();
+        }
+
+        foreach (Slider_Animation sa in FindObjectsOfType<Slider_Animation>())
+        {
+            sa.ResetValues();
+        }
     }
 }

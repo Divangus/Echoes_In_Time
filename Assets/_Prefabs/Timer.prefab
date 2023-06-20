@@ -86,15 +86,15 @@ MonoBehaviour:
   m_HandleRect: {fileID: 3587629561231520954}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 12
+  m_MaxValue: 3
   m_WholeNumbers: 0
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3587629559396010719}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Slider_Animation, Assembly-CSharp
-        m_MethodName: SubmitSliderSetting
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -104,9 +104,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 3587629559396010719}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Slider_Animation, Assembly-CSharp
-        m_MethodName: setTimer
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -143,8 +143,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: bb05d5e4944a6e443a8abf5bbda91c89, type: 3}
   - {fileID: 21300000, guid: bb05d5e4944a6e443a8abf5bbda91c89, type: 3}
   - {fileID: 21300000, guid: bb05d5e4944a6e443a8abf5bbda91c89, type: 3}
-  time_left: 0
-  playSlider: 0
   _TimerOut: 0
 --- !u!1 &3587629559595050995
 GameObject:

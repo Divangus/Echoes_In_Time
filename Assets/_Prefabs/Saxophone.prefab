@@ -4888,6 +4888,7 @@ GameObject:
   - component: {fileID: 3165378890251273305}
   - component: {fileID: 3165378890251273306}
   - component: {fileID: 3348337874006435702}
+  - component: {fileID: 8615327780665107853}
   m_Layer: 0
   m_Name: Saxophone
   m_TagString: Cannon
@@ -4990,6 +4991,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &8615327780665107853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3165378890251273307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91ec04dbd141fd647bb7434b0dfa058a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  copies: 0
+  useNumberOfMaps: 1
 --- !u!1 &5681545214194506892
 GameObject:
   m_ObjectHideFlags: 0
@@ -5040,7 +5055,7 @@ MonoBehaviour:
   _SelectedBall: 0
   _timer: {fileID: 0}
   canonParticles: {fileID: 5968373646561267687}
-  _instrument: saxophone
+  _instrument: 0
 --- !u!1 &8110430102936870464
 GameObject:
   m_ObjectHideFlags: 0

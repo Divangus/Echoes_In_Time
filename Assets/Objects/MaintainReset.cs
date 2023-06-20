@@ -11,7 +11,7 @@ public class MaintainReset : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        if (CompareTag("Untagged")) Debug.Log("OBJECT NEEDS A TAG");
+        if (CompareTag("Untagged")) Debug.Log("OBJECT NEEDS A TAG: " + gameObject.name);
 
         GameObject[] objs = GameObject.FindGameObjectsWithTag(tag);
 

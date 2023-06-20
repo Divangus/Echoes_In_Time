@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2829868098011972948}
   - component: {fileID: 2829868098011972951}
   - component: {fileID: 2512928124717999739}
+  - component: {fileID: 1007078525125452520}
   m_Layer: 0
   m_Name: Keyboard
   m_TagString: Cannon
@@ -113,6 +114,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1007078525125452520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2829868098011972950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91ec04dbd141fd647bb7434b0dfa058a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  copies: 0
+  useNumberOfMaps: 1
 --- !u!1 &4787605799849827713
 GameObject:
   m_ObjectHideFlags: 0

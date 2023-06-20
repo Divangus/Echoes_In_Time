@@ -42,7 +42,7 @@ public class BallScript : MonoBehaviour
         }
 
         //Shoot
-        if (_timer.GetComponent<Slider_Animation>().playSlider == false && _timer.GetComponent<Slider_Animation>()._TimerOut == true && !_ShootedBall)
+        if (!_timer.GetComponent<Slider_Animation>().IsPlaying() && _timer.GetComponent<Slider_Animation>()._TimerOut == true && !_ShootedBall)
         {
             canonParticles.Play();
             Instantiate(ball, transform.position, transform.rotation).velocity = transform.up * _ballSpeed;
@@ -71,7 +71,12 @@ public class BallScript : MonoBehaviour
     {
         if(!_ShootedBall)
         {
-            _timer.GetComponent<Slider_Animation>().playSlider = true;
+            _timer.GetComponent<Slider_Animation>().Play();
         }
+    }
+
+    public void ResetValues()
+    {
+        _ShootedBall = false;
     }
 }
