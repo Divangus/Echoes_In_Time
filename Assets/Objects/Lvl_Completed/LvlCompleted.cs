@@ -18,6 +18,7 @@ public class LvlCompleted : MonoBehaviour
     float alpha = 0.0f;
     public AudioClip _lvlComplete;
     public AudioClip _lvlFail;
+    public AudioClip _Booster;
 
     AudioSource source;
 

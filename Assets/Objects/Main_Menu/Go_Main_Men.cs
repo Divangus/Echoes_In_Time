@@ -12,5 +12,8 @@ public class Go_Main_Men : MonoBehaviour
 
         //change scene to the main menu
         FindObjectOfType<LvlCompleted>().ChangeScene(mainMenu);
+
+        //pause
+        FindObjectOfType<LvlCompleted>().GetComponent<AudioSource>().Pause();
     }
 }
