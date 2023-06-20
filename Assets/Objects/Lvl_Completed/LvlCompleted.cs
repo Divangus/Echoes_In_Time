@@ -17,6 +17,7 @@ public class LvlCompleted : MonoBehaviour
 
     float alpha = 0.0f;
     public AudioClip _lvlComplete;
+    AudioSource source;
 
     bool getCanvas = false;
 
@@ -37,6 +38,8 @@ public class LvlCompleted : MonoBehaviour
 
     private void Start()
     {
+        source = GetComponent<AudioSource>();
+
         GetCanvas();
         //canv.alpha = 1.0f;
     }
@@ -88,6 +91,7 @@ public class LvlCompleted : MonoBehaviour
     {
         canv = GameObject.Find("transition").GetComponent<CanvasGroup>();
         if (canv == null) Debug.Log("Can't find 'transition' object");
+        Debug.Log("canvas found!");
     }
 
     void RealChangeScene()
@@ -100,6 +104,11 @@ public class LvlCompleted : MonoBehaviour
         }
 
         SceneManager.LoadScene(sceneToChange);
+    }
+
+    public void PlayAudio(AudioClip ac)
+    {
+        source.PlayOneShot(ac);
     }
 }
 

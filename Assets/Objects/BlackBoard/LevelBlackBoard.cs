@@ -41,7 +41,7 @@ public class LevelBlackBoard : MonoBehaviour
         if(goalsReached == numberOfMaps)
         {
             LvlCompleted lc = FindObjectOfType<LvlCompleted>();
-            lc.gameObject.GetComponent<AudioSource>().PlayOneShot(lc._lvlComplete);
+            lc.PlayAudio(lc._lvlComplete);
 
             //Mark lvl as completed
             if (level > 0)
