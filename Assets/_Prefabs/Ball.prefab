@@ -4986,12 +4986,12 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 34c7a263dfaf3a049b5d4a0e083d86de, type: 3}
   - {fileID: 8300000, guid: 6cdaf4a000990be4bbda6b3ee94f6657, type: 3}
   _DrumsClips:
-  - {fileID: 8300000, guid: 1c75fadc695bc984cad31d6c19736caf, type: 3}
-  - {fileID: 8300000, guid: 1c75fadc695bc984cad31d6c19736caf, type: 3}
-  - {fileID: 8300000, guid: 1c75fadc695bc984cad31d6c19736caf, type: 3}
-  - {fileID: 8300000, guid: 1c75fadc695bc984cad31d6c19736caf, type: 3}
-  - {fileID: 8300000, guid: 1c75fadc695bc984cad31d6c19736caf, type: 3}
-  - {fileID: 8300000, guid: 1c75fadc695bc984cad31d6c19736caf, type: 3}
+  - {fileID: 8300000, guid: f04519fac35c43549b5d475169e46079, type: 3}
+  - {fileID: 8300000, guid: a9c8092737175124e9cc756943e2e921, type: 3}
+  - {fileID: 8300000, guid: 1ff59be68e9d7c547a3d5730819a36b5, type: 3}
+  - {fileID: 8300000, guid: c702c180424047244a4118de51d3b77b, type: 3}
+  - {fileID: 8300000, guid: 9d127d6948fdbff45a9ebd9b0d4c25b0, type: 3}
+  - {fileID: 8300000, guid: ad6bf7ff18587e540bf6c8e9822e9082, type: 3}
   _instrument_name: 0
 --- !u!82 &7302680193309261399
 AudioSource:

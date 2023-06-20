@@ -19,6 +19,8 @@ public class LevelBlackBoard : MonoBehaviour
 
     public List<GameObject> objectsToDestroy = new List<GameObject>();
 
+    private bool isTransitioning = false;
+
     private void Awake()
     {
         if (CompareTag("Untagged")) Debug.Log("OBJECT NEEDS A TAG");
@@ -38,8 +40,9 @@ public class LevelBlackBoard : MonoBehaviour
     //Change Scene
     private void Update()
     {
-        if(goalsReached == numberOfMaps)
+        if(!isTransitioning && goalsReached == numberOfMaps)
         {
+            isTransitioning = true;
             LvlCompleted lc = FindObjectOfType<LvlCompleted>();
             lc.PlayAudio(lc._lvlComplete);
 
@@ -74,6 +77,7 @@ public class LevelBlackBoard : MonoBehaviour
 
     public void ResetValues()
     {
+        isTransitioning = false;
         goalsReached = 0;
         foreach(BallScript bs in FindObjectsOfType<BallScript>())
         {
