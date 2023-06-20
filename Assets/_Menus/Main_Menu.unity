@@ -902,11 +902,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1912598521108171562, guid: 287b896e20cf84b4c8b3fc18f42da562, type: 3}
       propertyPath: m_Pivot.x
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1912598521108171562, guid: 287b896e20cf84b4c8b3fc18f42da562, type: 3}
       propertyPath: m_Pivot.y
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1912598521108171562, guid: 287b896e20cf84b4c8b3fc18f42da562, type: 3}
       propertyPath: m_RootOrder
@@ -930,11 +930,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1912598521108171562, guid: 287b896e20cf84b4c8b3fc18f42da562, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1920
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1912598521108171562, guid: 287b896e20cf84b4c8b3fc18f42da562, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 1080
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1912598521108171562, guid: 287b896e20cf84b4c8b3fc18f42da562, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1912598521108171562, guid: 287b896e20cf84b4c8b3fc18f42da562, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1912598521108171562, guid: 287b896e20cf84b4c8b3fc18f42da562, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1912598521108171562, guid: 287b896e20cf84b4c8b3fc18f42da562, type: 3}
       propertyPath: m_LocalPosition.x
@@ -985,12 +997,32 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1912598521108171572, guid: 287b896e20cf84b4c8b3fc18f42da562, type: 3}
-      propertyPath: m_PresetInfoIsWorld
+      propertyPath: m_UiScaleMode
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1912598521108171572, guid: 287b896e20cf84b4c8b3fc18f42da562, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1912598521108171572, guid: 287b896e20cf84b4c8b3fc18f42da562, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 1912598521108171572, guid: 287b896e20cf84b4c8b3fc18f42da562, type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
+      objectReference: {fileID: 0}
+    - target: {fileID: 1912598521108171573, guid: 287b896e20cf84b4c8b3fc18f42da562, type: 3}
+      propertyPath: m_RenderMode
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1912598521108171574, guid: 287b896e20cf84b4c8b3fc18f42da562, type: 3}
       propertyPath: m_Name
       value: Main_Menu
+      objectReference: {fileID: 0}
+    - target: {fileID: 1912598521469027577, guid: 287b896e20cf84b4c8b3fc18f42da562, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1912598521994518398, guid: 287b896e20cf84b4c8b3fc18f42da562, type: 3}
       propertyPath: m_IsActive
@@ -1014,23 +1046,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1912598522154814413, guid: 287b896e20cf84b4c8b3fc18f42da562, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1912598522154814413, guid: 287b896e20cf84b4c8b3fc18f42da562, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1912598522228944655, guid: 287b896e20cf84b4c8b3fc18f42da562, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1912598522228944655, guid: 287b896e20cf84b4c8b3fc18f42da562, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1912598522228944655, guid: 287b896e20cf84b4c8b3fc18f42da562, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1912598522302801785, guid: 287b896e20cf84b4c8b3fc18f42da562, type: 3}
       propertyPath: startDelay.scalar
