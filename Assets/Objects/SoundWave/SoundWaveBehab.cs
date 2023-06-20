@@ -7,15 +7,17 @@ public class SoundWaveBehab : MonoBehaviour
     private bool hot = false;
     public ParticleSystem particlesBooster;
     public ParticleSystem particles;
+    public ParticleSystem particlesEspill;
 
     private void Update()
     {
         transform.up = gameObject.GetComponent<Rigidbody2D>().velocity.normalized;
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        //PARTICLES
+        if (!collision.gameObject.CompareTag("Espill")) return;
+        particlesEspill.Play();
     }
 
     public void SetHot(bool value)
