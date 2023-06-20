@@ -33,10 +33,10 @@ public class Espill_Sound : MonoBehaviour
                 audioSource.PlayOneShot(_SaxophoneClips[_saxoCount]);
                 _saxoCount++;
                 break;
-          //  case "piano":
-          //      audioSource.PlayOneShot(_PianoClips[_pianoCount]);
-          //      _pianoCount++;
-          //      break;
+            case 1:
+               audioSource.PlayOneShot(_PianoClips[_pianoCount]);
+               _pianoCount++;
+               break;
           //  case "drums":
           //      audioSource.PlayOneShot(_DrumsClips[_drumsCount]);
           //      _drumsCount++;

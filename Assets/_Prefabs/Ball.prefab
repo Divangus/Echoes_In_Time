@@ -9788,7 +9788,12 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 167b934887e736949988f70277ab1b07, type: 3}
   - {fileID: 8300000, guid: 7066dac0822164e4b8997e28f98bb519, type: 3}
   - {fileID: 8300000, guid: b6b9ceaf72bb19841a21b21ffb711dbf, type: 3}
-  _PianoClips: []
+  _PianoClips:
+  - {fileID: 8300000, guid: 2d68b1991c6375446b1cff0b7f249d3f, type: 3}
+  - {fileID: 8300000, guid: 516e010a52a42964ba660baabb36baa8, type: 3}
+  - {fileID: 8300000, guid: 9bf0ff6b71876844ea67e1c89e8d9256, type: 3}
+  - {fileID: 8300000, guid: 34c7a263dfaf3a049b5d4a0e083d86de, type: 3}
+  - {fileID: 8300000, guid: 6cdaf4a000990be4bbda6b3ee94f6657, type: 3}
   _DrumsClips: []
   _instrument_name: 0
 --- !u!82 &7302680193309261399
@@ -9801,7 +9806,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 2569777539619139938, guid: 89b5c26f47b8b6540b561cd8419af6d1, type: 2}
-  m_audioClip: {fileID: 8300000, guid: ce6406a4e149a8f4aa7c26ac9b422b2b, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 3326fc5413a3a654fab267330cfcabae, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
