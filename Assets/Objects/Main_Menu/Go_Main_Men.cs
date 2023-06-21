@@ -6,14 +6,11 @@ using UnityEngine.SceneManagement;
 public class Go_Main_Men : MonoBehaviour
 {
    public void GoTo(string mainMenu)
-    {
-        // Destroy al cloned GO
-        FindObjectOfType<LevelBlackBoard>().DestroyEverything();
-
+   {
         //change scene to the main menu
-        FindObjectOfType<LvlCompleted>().ChangeScene(mainMenu);
+        FindObjectOfType<LvlCompleted>().ChangeScene(mainMenu, true);
 
         //pause
         FindObjectOfType<LvlCompleted>().GetComponent<AudioSource>().Pause();
-    }
+   }
 }
