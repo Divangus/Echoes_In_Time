@@ -531,7 +531,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 578235352626719748, guid: 7603bb188b9877d41b80917f1701b700, type: 3}
       propertyPath: level
-      value: 8
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 578235352626719748, guid: 7603bb188b9877d41b80917f1701b700, type: 3}
       propertyPath: distance
