@@ -1,4 +1,4 @@
-# ECHOS IN TIME
+# ECHOES IN TIME
 
 ![Catchy Cover of the game](https://cdn.discordapp.com/attachments/1051581530817957958/1121152391778148453/portada.png)
 
