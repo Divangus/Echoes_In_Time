@@ -175,6 +175,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1811220060399421198, guid: b287923969ef1f94ea32bccf47af4531, type: 3}
+      propertyPath: m_Size.x
+      value: 12.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1811220060399421198, guid: b287923969ef1f94ea32bccf47af4531, type: 3}
+      propertyPath: m_Size.y
+      value: 19.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 1811220060399421198, guid: b287923969ef1f94ea32bccf47af4531, type: 3}
+      propertyPath: m_Offset.y
+      value: 8.01
+      objectReference: {fileID: 0}
     - target: {fileID: 1811220060399421199, guid: b287923969ef1f94ea32bccf47af4531, type: 3}
       propertyPath: m_Name
       value: Drum
@@ -491,6 +503,14 @@ PrefabInstance:
     - target: {fileID: 2829868098011972950, guid: 799e9f3694fba874f985fb08eeacef03, type: 3}
       propertyPath: m_Name
       value: Keyboard
+      objectReference: {fileID: 0}
+    - target: {fileID: 2829868098011972951, guid: 799e9f3694fba874f985fb08eeacef03, type: 3}
+      propertyPath: m_Size.x
+      value: 16.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2829868098011972951, guid: 799e9f3694fba874f985fb08eeacef03, type: 3}
+      propertyPath: m_Size.y
+      value: 24.79
       objectReference: {fileID: 0}
     - target: {fileID: 4787605799849827716, guid: 799e9f3694fba874f985fb08eeacef03, type: 3}
       propertyPath: _timer
@@ -1949,6 +1969,14 @@ PrefabInstance:
     - target: {fileID: 3165378890251273305, guid: 3a384aef2cc2164459039d34faf3f5bb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3165378890251273306, guid: 3a384aef2cc2164459039d34faf3f5bb, type: 3}
+      propertyPath: m_Size.x
+      value: 16.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3165378890251273306, guid: 3a384aef2cc2164459039d34faf3f5bb, type: 3}
+      propertyPath: m_Size.y
+      value: 24.79
       objectReference: {fileID: 0}
     - target: {fileID: 3165378890251273307, guid: 3a384aef2cc2164459039d34faf3f5bb, type: 3}
       propertyPath: m_Name
