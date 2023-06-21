@@ -460,7 +460,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 578235352626719748, guid: 7603bb188b9877d41b80917f1701b700, type: 3}
       propertyPath: finalLevel
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 578235352626719748, guid: 7603bb188b9877d41b80917f1701b700, type: 3}
       propertyPath: numberOfMaps
