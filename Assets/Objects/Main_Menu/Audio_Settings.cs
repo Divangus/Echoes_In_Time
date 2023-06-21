@@ -12,7 +12,6 @@ public class Audio_Settings : MonoBehaviour
     {
         float mixerValue;
         audioMixer.GetFloat("volume", out mixerValue);
-        Debug.Log(mixerValue);
         if (mixerValue == -80.0f) GetComponent<Slider>().value = 0.0f;
         else
         {
