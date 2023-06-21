@@ -49,6 +49,7 @@ MonoBehaviour:
   fadeTime: 0.1
   _lvlComplete: {fileID: 8300000, guid: 2ec174c15a786cb4c9721dbeab48ea82, type: 3}
   _lvlFail: {fileID: 8300000, guid: 5bcedd38478e6344aa2bf8710d57d96c, type: 3}
+  _Booster: {fileID: 8300000, guid: e2f194383676a5a4e836d1205cf9e8cc, type: 3}
 --- !u!82 &-3205342998312104931
 AudioSource:
   m_ObjectHideFlags: 0
@@ -60,7 +61,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -7026656406027673329, guid: 89b5c26f47b8b6540b561cd8419af6d1, type: 2}
   m_audioClip: {fileID: 8300000, guid: 1eb2aeda5e7a6b34a937648e621b6886, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0

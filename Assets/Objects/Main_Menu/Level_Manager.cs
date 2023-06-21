@@ -10,6 +10,9 @@ public class Level_Manager : MonoBehaviour
     public void Select_Level(int lvl)
     {
         FindObjectOfType<LvlCompleted>().ChangeScene("Lvl_" + lvl);
+
+        FindObjectOfType<LvlCompleted>().GetComponent<AudioSource>().Play();
+        //play
     }
 
     public void Update_LevelSelect()

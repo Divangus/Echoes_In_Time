@@ -46,11 +46,9 @@ public class Goal : MonoBehaviour
     {
         if (shake)
         {
-            Vector3 newPos = Random.insideUnitSphere * (Time.deltaTime * amount);
-            newPos.y = transform.position.y;
-            newPos.z = transform.position.z;
+            Vector2 newPos = Random.insideUnitCircle * (Time.deltaTime * amount);
 
-            transform.position = newPos;
+            transform.position += new Vector3(newPos.x, newPos.y, 0);
         }
     }
 
