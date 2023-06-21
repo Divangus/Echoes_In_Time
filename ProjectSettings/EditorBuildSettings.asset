@@ -27,10 +27,10 @@ EditorBuildSettings:
     path: Assets/_Levels/Lvl_6.unity
     guid: e23ac4e99ff384a4684765ff0bcb46c8
   - enabled: 1
-    path: Assets/_Levels/Lvl_7.unity
+    path: Assets/_Levels/Lvl_8.unity
     guid: 37ae4736be85cc44e85a92dff9cf7c3e
   - enabled: 1
-    path: Assets/_Levels/Lvl_8.unity
+    path: Assets/_Levels/Lvl_10.unity
     guid: 09fb319b2b98e4048b4581006d41b7af
   - enabled: 1
     path: Assets/_Levels/Lvl_9.unity
@@ -42,22 +42,22 @@ EditorBuildSettings:
     path: Assets/_Levels/Lvl_14.unity
     guid: 392ea3b3e57afdc4eb104cb9c9432fb9
   - enabled: 1
-    path: Assets/_Levels/Lvl_13.unity
+    path: Assets/_Levels/Lvl_16.unity
     guid: 4c328e52817a5ad459cfbabbe7436422
   - enabled: 1
-    path: Assets/_Levels/Lvl_12.unity
+    path: Assets/_Levels/Lvl_13.unity
     guid: cc83429ef5a09fc4c884fe5ba1235d09
   - enabled: 1
-    path: Assets/_Levels/Lvl_11.unity
+    path: Assets/_Levels/Lvl_17.unity
     guid: c4aedd31160b17e409a8a896242bb39c
   - enabled: 1
-    path: Assets/_Levels/Lvl_10.unity
+    path: Assets/_Levels/Lvl_7.unity
     guid: da606c21f064328498bac3366f70d383
   - enabled: 1
-    path: Assets/_Levels/Lvl_16.unity
+    path: Assets/_Levels/Lvl_11.unity
     guid: c343cab5f9129a544bfaa6ad867c2773
   - enabled: 1
-    path: Assets/_Levels/Lvl_17.unity
+    path: Assets/_Levels/Lvl_12.unity
     guid: 78d012bb45434ea4296b9e2fa2d881dc
   - enabled: 1
     path: Assets/_Levels/Lvl_18.unity
