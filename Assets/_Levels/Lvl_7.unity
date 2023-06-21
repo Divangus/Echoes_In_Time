@@ -1100,6 +1100,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1811220060399421198, guid: b287923969ef1f94ea32bccf47af4531, type: 3}
+      propertyPath: m_Size.x
+      value: 18.18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1811220060399421198, guid: b287923969ef1f94ea32bccf47af4531, type: 3}
+      propertyPath: m_Size.y
+      value: 17.53
+      objectReference: {fileID: 0}
+    - target: {fileID: 1811220060399421198, guid: b287923969ef1f94ea32bccf47af4531, type: 3}
+      propertyPath: m_Offset.x
+      value: -1.14
+      objectReference: {fileID: 0}
+    - target: {fileID: 1811220060399421198, guid: b287923969ef1f94ea32bccf47af4531, type: 3}
+      propertyPath: m_Offset.y
+      value: 7.5
+      objectReference: {fileID: 0}
     - target: {fileID: 1811220060399421199, guid: b287923969ef1f94ea32bccf47af4531, type: 3}
       propertyPath: m_Name
       value: Drum
