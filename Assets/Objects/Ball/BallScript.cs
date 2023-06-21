@@ -45,8 +45,8 @@ public class BallScript : MonoBehaviour
         if (!_timer.GetComponent<Slider_Animation>().IsPlaying() && _timer.GetComponent<Slider_Animation>()._TimerOut == true && !_ShootedBall)
         {
             canonParticles.Play();
-            Instantiate(ball, transform.position, transform.rotation).velocity = transform.up * _ballSpeed;
             ball.gameObject.GetComponent<Espill_Sound>()._instrument_name = _instrument;
+            Instantiate(ball, transform.position, transform.rotation).velocity = transform.up * _ballSpeed;
             _ShootedBall = true;
         }        
 

@@ -112,7 +112,6 @@ public class LvlCompleted : MonoBehaviour
     public void PlayAudio(AudioClip ac)
     {
         source.PlayOneShot(ac);
-        Debug.Log("Sound!!!");
     }
 }
 
