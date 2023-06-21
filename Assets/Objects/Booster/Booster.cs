@@ -20,7 +20,8 @@ public class Booster : MonoBehaviour
         if(other.CompareTag("soundWave"))
         {
             LvlCompleted lc = FindObjectOfType<LvlCompleted>();
-            lc.PlayAudio(lc._Booster);
+            if (lc == null) Debug.Log("LC non existance");
+            else lc.PlayAudio(lc._Booster);
 
             other.transform.position = new Vector3(transform.position.x, transform.position.y, 0);
 
