@@ -174,7 +174,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ball: {fileID: 3099422251427321635, guid: 86476c42a79c71b4196f06454fdd25e1, type: 3}
-  _ballSpeed: 10
+  _ballSpeed: 5
   _SelectedBall: 0
   _timer: {fileID: 0}
   canonParticles: {fileID: 1847020318762062136}

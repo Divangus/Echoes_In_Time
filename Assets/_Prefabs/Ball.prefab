@@ -4958,7 +4958,7 @@ MonoBehaviour:
   particlesBooster: {fileID: 8788330695804383400}
   particles: {fileID: 2502942470474695054}
   particlesEspill: {fileID: 6267622016159952849}
-  particleTime: 0.05
+  particleTime: 0.1
 --- !u!114 &8617991952086034243
 MonoBehaviour:
   m_ObjectHideFlags: 0
