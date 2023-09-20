@@ -3,7 +3,7 @@
 ![Catchy Cover of the game](https://cdn.discordapp.com/attachments/1051581530817957958/1121152391778148453/portada.png)
 
 ## About The Game
-The music is so powerful, prove it in this incredible puzzle game, based on echo.
+Do yoy know the power of music? Prove it in this incredible puzzle game, based on echo.
 Play in parallel worlds and control the time to complete your objective!
 
  - Different puzzles
